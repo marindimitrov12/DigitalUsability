@@ -29,3 +29,27 @@ logs/
 
 # OS files
 .DS_Store
+
+# Build output
+bin/
+obj/
+
+# Rider
+.idea/
+
+# User settings
+*.user
+*.DotSettings.user
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Test results
+TestResults/
+
+# NuGet
+*.nupkg
