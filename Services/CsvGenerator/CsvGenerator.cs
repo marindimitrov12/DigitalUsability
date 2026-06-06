@@ -13,7 +13,7 @@ public class CsvGenerator:ICsvGenerator
     public CsvGenerator(IStreamWriterFactory writerFactory)
     {
         _writerFactory = writerFactory;
-    }  
+    }    
 
     public async Task OpenAsync(string outputPath)
     {
