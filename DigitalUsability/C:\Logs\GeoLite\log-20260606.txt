@@ -1,0 +1,26 @@
+2026-06-06 17:43:55.039 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-06 17:43:55.050 +03:00 [INF] Worker started at: "2026-06-06T17:43:55.0363210+03:00"
+2026-06-06 17:43:55.064 +03:00 [INF] Hosting environment: Development
+2026-06-06 17:43:55.066 +03:00 [INF] Content root path: /Users/user/Desktop/Projects/DigitalUsabilityAssesment/DigitalUsability/DigitalUsability
+2026-06-06 17:43:55.067 +03:00 [ERR] Error in worker
+System.IO.FileNotFoundException: CSV file not found.
+File name: 'C:\GeoLite\GeoLite2-Country-Blocks-IPv4.csv'
+   at Services.ExcelReader.ExcelReader..ctor(String filePath, IStreamReaderFactory factory) in /Users/user/Desktop/Projects/DigitalUsabilityAssesment/DigitalUsability/Services/ExcelReader/ExcelReader.cs:line 15
+   at Program.<>c.<<Main>$>b__0_0(IServiceProvider sp) in /Users/user/Desktop/Projects/DigitalUsabilityAssesment/DigitalUsability/DigitalUsability/Program.cs:line 40
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at DigitalUsability.Worker.ExecuteAsync(CancellationToken stoppingToken) in /Users/user/Desktop/Projects/DigitalUsabilityAssesment/DigitalUsability/DigitalUsability/Worker.cs:line 36
+2026-06-06 17:43:55.072 +03:00 [INF] Worker stopping at: "2026-06-06T17:43:55.0728400+03:00"
+2026-06-06 17:43:55.072 +03:00 [INF] Application is shutting down...
